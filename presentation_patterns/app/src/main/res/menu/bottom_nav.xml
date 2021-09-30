@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:contentDescription="@string/tab_search"
+        android:icon="@drawable/ic_search"
+        android:layoutDirection="rtl"
+        android:title="@string/tab_search"/>
+
+    <item
+        android:id="@+id/city"
+        android:contentDescription="@string/tab_city"
+        android:icon="@drawable/ic_city"
+        android:layoutDirection="rtl"
+        android:title="@string/tab_city"/>
+</menu>

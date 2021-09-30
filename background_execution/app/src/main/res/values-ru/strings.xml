@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Часы</string>
+    <string name="time_zone">Часовой пояс</string>
+    <string name="no_days_selected">Дни не выбраны</string>
+    <string name="max_reminder_duration">Максимальная длительность напоминания</string>
+    <string name="clock_and_date">Часы и дата</string>
+    <string name="use_text_shadow">Использовать затенение текста</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Часы</string>
+    <string name="alarm_tab">Будильник</string>
+    <string name="show_seconds">Показывать секунды</string>
+    <string name="increase_volume_gradually">Увеличивать громкость постепенно</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

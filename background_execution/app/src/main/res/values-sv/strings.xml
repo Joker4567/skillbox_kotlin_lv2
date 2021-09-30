@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Klocka</string>
+    <string name="time_zone">Tidszon</string>
+    <string name="no_days_selected">Inga dagar har valts</string>
+    <string name="max_reminder_duration">Maximal påminnelsevaraktighet</string>
+    <string name="clock_and_date">Klocka och datum</string>
+    <string name="use_text_shadow">Använd textskugga</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Fliken Klocka</string>
+    <string name="alarm_tab">Fliken Alarm</string>
+    <string name="show_seconds">Visa sekunder</string>
+    <string name="increase_volume_gradually">Höj volymen gradvis</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

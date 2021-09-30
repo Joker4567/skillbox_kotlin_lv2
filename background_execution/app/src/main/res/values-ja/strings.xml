@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">時計</string>
+    <string name="time_zone">タイムゾーン</string>
+    <string name="no_days_selected">曜日が選択されていません</string>
+    <string name="max_reminder_duration">リマインダーの最大再生時間</string>
+    <string name="clock_and_date">時計と日付</string>
+    <string name="use_text_shadow">文字に影を付ける</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">時計</string>
+    <string name="alarm_tab">アラーム</string>
+    <string name="show_seconds">秒を表示</string>
+    <string name="increase_volume_gradually">音量を徐々に大きくする</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

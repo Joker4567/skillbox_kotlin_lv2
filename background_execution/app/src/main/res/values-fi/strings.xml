@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_launcher_name">Kello</string>
+    <string name="time_zone">Aikavyöhyke</string>
+    <string name="no_days_selected">Ei päiviä valittuna</string>
+    <string name="max_reminder_duration">Herätyksen maksimikesto</string>
+    <string name="clock_and_date">Kello ja päivä</string>
+    <string name="use_text_shadow">Tekstin varjostus</string><![CDATA[
+
+
+     
+    ]]><!--Timer--><![CDATA[
+
+
+
+
+     
+    ]]><!-- Settings -->
+    <string name="clock_tab">Kello-välilehti</string>
+    <string name="alarm_tab">Herätyskello-välilehti</string>
+    <string name="show_seconds">Näytä sekunnit</string>
+    <string name="increase_volume_gradually">Lisää äänen voimakkuutta asteittain</string>
+ 
+    <!-- FAQ --><![CDATA[
+
+     
+    ]]><!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

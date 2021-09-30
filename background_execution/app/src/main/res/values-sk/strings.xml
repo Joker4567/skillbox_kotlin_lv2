@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Hodinky</string>
+    <string name="time_zone">Časové pásmo</string>
+    <string name="no_days_selected">Neboli označené žiadne dni</string>
+    <string name="max_reminder_duration">Maximálna dĺžka upozorňovania</string>
+    <string name="clock_and_date">Hodiny a dátum</string>
+    <string name="use_text_shadow">Použiť tieňovanie písma</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Okno s časom</string>
+    <string name="alarm_tab">Okno s budíkom</string>
+    <string name="show_seconds">Zobraziť sekundy</string>
+    <string name="increase_volume_gradually">Zvyšovať hlasitosť postupne</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

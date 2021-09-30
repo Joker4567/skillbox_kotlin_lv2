@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Jam</string>
+    <string name="time_zone">Zona waktu</string>
+    <string name="no_days_selected">Tidak ada hari yang dipilih</string>
+    <string name="max_reminder_duration">Durasi pengingat maksimum</string>
+    <string name="clock_and_date">Jam dan tanggal</string>
+    <string name="use_text_shadow">Gunakan bayangan teks</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Tab jam</string>
+    <string name="alarm_tab">Tab alarm</string>
+    <string name="show_seconds">Tampilkan detik</string>
+    <string name="increase_volume_gradually">Keraskan volume secara bertahap</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

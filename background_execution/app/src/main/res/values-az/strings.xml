@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_launcher_name">Saat</string>
+    <string name="time_zone">Vaxt zonası</string>
+    <string name="no_days_selected">Gün seçilməyib</string>
+    <string name="vibrate">Titrət</string>
+    <string name="sun_times">Sun times</string>
+    <string name="max_reminder_duration">Maks. xatırladıcı müddəti</string>
+    <string name="clock_and_date">Saat və zaman</string>
+    <string name="use_text_shadow">Mətn kölgəsini işlət</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Saat bölməsi</string>
+    <string name="alarm_tab">Siqnal bölməsi</string>
+    <string name="show_seconds">Saniyələri göstər</string>
+    <string name="increase_volume_gradually">Səsi aramla yüksəlt</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_launcher_name">簡易時鐘</string>
+    <string name="time_zone">時區</string>
+    <string name="no_days_selected">未選擇哪一天</string>
+    <string name="vibrate">震動</string>
+    <string name="sun_times">Sun times</string>
+    <string name="max_reminder_duration">最長提醒持續時間</string>
+    <string name="clock_and_date">時鐘和日期</string>
+    <string name="use_text_shadow">使用文字陰影</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">時鐘頁面</string>
+    <string name="alarm_tab">鬧鐘頁面</string>
+    <string name="show_seconds">顯示秒數</string>
+    <string name="increase_volume_gradually">音量漸增</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/drawable/ic_alive.xml" value="0.3828125" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/drawable/ic_dead.xml" value="0.3828125" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/drawable/ic_unknown.xml" value="1.9785714285714286" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/layout/fragment_pagination.xml" value="0.358695652173913" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/layout/main_activity.xml" value="0.33" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/layout/view_character.xml" value="0.5" />
+        <entry key="..\:/source/Skillbox/RecyclerView/app/src/main/res/layout/view_element.xml" value="0.358695652173913" />
+        <entry key="..\:/source/Skillbox/android_lvl2/RecyclerView/app/src/main/res/layout/fragment_pagination.xml" value="0.3605072463768116" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

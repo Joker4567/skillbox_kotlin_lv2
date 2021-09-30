@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Horloge</string>
+    <string name="time_zone">Fuseau Horaire</string>
+    <string name="no_days_selected">Aucun jour sélectionné</string>
+    <string name="max_reminder_duration">Durée maximale du rappel</string>
+    <string name="clock_and_date">Date et heure</string>
+    <string name="use_text_shadow">Texte ombragé</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Horloge</string>
+    <string name="alarm_tab">Réveil</string>
+    <string name="show_seconds">Afficher les secondes</string>
+    <string name="increase_volume_gradually">Augmenter progressivement le volume</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

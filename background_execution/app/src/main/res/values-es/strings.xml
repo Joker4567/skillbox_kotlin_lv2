@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Reloj</string>
+    <string name="time_zone">Zona horaria</string>
+    <string name="no_days_selected">Ningún día seleccionado</string>
+    <string name="max_reminder_duration">Máxima duración de recordatorio</string>
+    <string name="clock_and_date">Fecha y hora</string>
+    <string name="use_text_shadow">Usar sombra de texto</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Pestaña de reloj</string>
+    <string name="alarm_tab">Pestaña de alarma</string>
+    <string name="show_seconds">Mostrar segundos</string>
+    <string name="increase_volume_gradually">Aumentar volumen gradualmente</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

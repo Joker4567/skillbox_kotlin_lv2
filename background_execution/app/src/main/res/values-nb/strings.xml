@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Klokke</string>
+    <string name="time_zone">Tidssone</string>
+    <string name="no_days_selected">Ingen dager valgte</string>
+    <string name="max_reminder_duration">Maksimum påminnelsesvarighet</string>
+    <string name="clock_and_date">Klokke og dato</string>
+    <string name="use_text_shadow">Bruk tekstskygge</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Klokke</string>
+    <string name="alarm_tab">Alarm</string>
+    <string name="show_seconds">Vis sekunder</string>
+    <string name="increase_volume_gradually">Øk volum gradvis</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

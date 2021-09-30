@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Orologio</string>
+    <string name="time_zone">Fuso orario</string>
+    <string name="no_days_selected">Nessun giorno selezionato</string>
+    <string name="max_reminder_duration">Durata della suoneria</string>
+    <string name="clock_and_date">Ora e data</string>
+    <string name="use_text_shadow">Abilita l\'ombreggiatura del testo</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Scheda orologio</string>
+    <string name="alarm_tab">Scheda sveglia</string>
+    <string name="show_seconds">Mostra secondi</string>
+    <string name="increase_volume_gradually">Incrementa il volume gradualmente</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

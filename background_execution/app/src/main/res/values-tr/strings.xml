@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_launcher_name">Saat</string>
+    <string name="time_zone">Saat dilimi</string>
+    <string name="no_days_selected">Hiçbir gün seçilmedi</string>
+    <string name="max_reminder_duration">Maksimum hatırlatma süresi</string>
+    <string name="clock_and_date">Saat ve tarih</string>
+    <string name="use_text_shadow">Metin gölgesi kullan</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Saat sekmesi</string>
+    <string name="alarm_tab">Alarm sekmesi</string>
+    <string name="show_seconds">Saniye göster</string>
+    <string name="increase_volume_gradually">Sesi kademeli olarak artır</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

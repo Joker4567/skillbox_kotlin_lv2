@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_launcher_name">Ur</string>
+    <string name="time_zone">Tidszone</string>
+    <string name="no_days_selected">Der er ikke valgt nogen dage</string>
+    <string name="vibrate">Vibrer</string>
+    <string name="sun_times">Sun times</string>
+    <string name="max_reminder_duration">Længste varighed af påmindelse</string>
+    <string name="clock_and_date">Clock and date</string>
+    <string name="use_text_shadow">Anvend tekstskygge</string>
+
+    <!--Timer-->
+
+    <!-- Settings -->
+    <string name="clock_tab">Ur</string>
+    <string name="alarm_tab">Alarm</string>
+    <string name="show_seconds">Vis sekunder</string>
+    <string name="increase_volume_gradually">Increase volume gradually</string>
+
+    <!-- FAQ -->
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- App title has to have less than 50 characters. If you cannot squeeze it, just remove a part of it -->
+    <!-- Short description has to have less than 80 chars -->
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>
