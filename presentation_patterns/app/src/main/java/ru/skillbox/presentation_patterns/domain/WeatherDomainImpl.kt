@@ -13,9 +13,8 @@ class WeatherDomainImpl @Inject constructor(
 ) : WeatherDomain {
     override suspend fun getWeatherCity(
             city: String,
-            onSuccess: (List<WeatherUI>) -> Unit,
             onState: (State) -> Unit
-    ) = network.getWeatherCity(city, onSuccess, onState)
+    ) = network.getWeatherCity(city, onState)
 
     override suspend fun getCityLocal(city: String): List<WeatherUI> =
             local.getCityLocal(city).map { it.mapToWeatherUI() }

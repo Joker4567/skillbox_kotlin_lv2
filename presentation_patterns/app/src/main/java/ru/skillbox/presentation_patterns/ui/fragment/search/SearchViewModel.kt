@@ -2,7 +2,6 @@ package ru.skillbox.presentation_patterns.ui.fragment.search
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
-import ru.skillbox.presentation_patterns.data.room.model.WeatherEntity
 import ru.skillbox.presentation_patterns.data.storage.Pref
 import ru.skillbox.presentation_patterns.domain.WeatherDomain
 import ru.skillbox.presentation_patterns.domain.model.WeatherUI
@@ -29,11 +28,12 @@ class SearchViewModel @Inject constructor(
     fun getCity(city: String) {
         lastCity = city
         launchIO {
-            weatherDomain.getWeatherCity(city, ::onSuccess, ::onError)
+            val result = weatherDomain.getWeatherCity(city, ::onError)
+            onUpdateWeather(result)
         }
     }
 
-    private fun onSuccess(result: List<WeatherUI>) {
+    private fun onUpdateWeather(result: List<WeatherUI>) {
         launch {
             if (result.isNotEmpty()) {
                 _weatherStatus.postValue(SUCCESS_WEATHER)

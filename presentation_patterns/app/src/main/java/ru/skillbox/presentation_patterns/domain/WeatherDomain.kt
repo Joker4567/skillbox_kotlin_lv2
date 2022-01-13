@@ -6,9 +6,8 @@ import ru.skillbox.presentation_patterns.utils.platform.State
 interface WeatherDomain {
     suspend fun getWeatherCity(
             city: String,
-            onSuccess: (List<WeatherUI>) -> Unit,
             onState: (State) -> Unit
-    )
+    ) : List<WeatherUI>
     suspend fun getCityLocal(
             city: String
     ) : List<WeatherUI>

@@ -15,12 +15,10 @@ object RepositoryModule {
 
     @Provides
     fun provideWeatherNetworkRepository(
-            errorHandler: ErrorHandler,
             weatherDao: WeatherDao,
             weatherApi: WeatherApi
     ): WeatherNetworkRepository {
         return WeatherNetworkRepositoryImpl(
-                errorHandler = errorHandler,
                 api = weatherApi,
                 weatherDao = weatherDao
         )
