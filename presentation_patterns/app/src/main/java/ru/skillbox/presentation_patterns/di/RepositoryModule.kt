@@ -3,27 +3,35 @@ package ru.skillbox.presentation_patterns.di
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.components.SingletonComponent
 import ru.skillbox.presentation_patterns.data.network.api.WeatherApi
-import ru.skillbox.presentation_patterns.data.network.repository.WeatherRepository
-import ru.skillbox.presentation_patterns.data.network.repository.WeatherRepositoryImpl
+import ru.skillbox.presentation_patterns.data.network.repository.*
 import ru.skillbox.presentation_patterns.data.room.dao.WeatherDao
 import ru.skillbox.presentation_patterns.utils.network.ErrorHandler
 
 @Module
-@InstallIn(ViewModelComponent::class)
+@InstallIn(SingletonComponent::class)
 object RepositoryModule {
 
     @Provides
-    fun provideWeatherRepository(
+    fun provideWeatherNetworkRepository(
             errorHandler: ErrorHandler,
             weatherDao: WeatherDao,
             weatherApi: WeatherApi
-    ): WeatherRepository {
-        return WeatherRepositoryImpl(
+    ): WeatherNetworkRepository {
+        return WeatherNetworkRepositoryImpl(
                 errorHandler = errorHandler,
                 api = weatherApi,
                 weatherDao = weatherDao
+        )
+    }
+
+    @Provides
+    fun provideWeatherLocalRepository(
+            weatherDao: WeatherDao
+    ) : WeatherDaoRepository {
+        return WeatherDaoRepositoryImpl(
+                weatherDao
         )
     }
 }

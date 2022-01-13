@@ -4,20 +4,23 @@ import ru.skillbox.presentation_patterns.data.network.api.WeatherApi
 import ru.skillbox.presentation_patterns.data.network.model.WeatherScheme
 import ru.skillbox.presentation_patterns.data.room.dao.WeatherDao
 import ru.skillbox.presentation_patterns.data.room.model.WeatherEntity
+import ru.skillbox.presentation_patterns.domain.mapper.mapToWeatherUI
+import ru.skillbox.presentation_patterns.domain.model.WeatherUI
 import ru.skillbox.presentation_patterns.utils.extension.getDateCurrent
 import ru.skillbox.presentation_patterns.utils.network.ErrorHandler
-import ru.skillbox.presentation_patterns.utils.platform.*
+import ru.skillbox.presentation_patterns.utils.platform.BaseRepository
+import ru.skillbox.presentation_patterns.utils.platform.State
 import javax.inject.Inject
 
-class WeatherRepositoryImpl @Inject constructor(
+class WeatherNetworkRepositoryImpl @Inject constructor(
         errorHandler: ErrorHandler,
         private val api: WeatherApi,
         private val weatherDao: WeatherDao
-) : BaseRepository(errorHandler = errorHandler), WeatherRepository {
+) : BaseRepository(errorHandler = errorHandler), WeatherNetworkRepository {
 
     override suspend fun getWeatherCity(
             city: String,
-            onSuccess: (List<WeatherEntity>) -> Unit,
+            onSuccess: (List<WeatherUI>) -> Unit,
             onState: (State) -> Unit
     ) {
         execute(onSuccess = onSuccess, onState = onState) {
@@ -33,26 +36,10 @@ class WeatherRepositoryImpl @Inject constructor(
                                 getDateCurrent()
                         )
                 )
-                weatherDao.getWeatherCity(city)
+                weatherDao.getWeatherCity(city).map { it.mapToWeatherUI() }
             }
             else
                 emptyList()
         }
     }
-
-    override suspend fun getCityLocal(
-            city: String
-    ) : List<WeatherEntity> =
-            weatherDao.getWeatherCity(city)
-
-    override suspend fun deleteArrayCity(
-            city: String
-    ) {
-        weatherDao.getWeatherCity(city).forEach {
-            weatherDao.deleteGameAppOfId(it.id)
-        }
-    }
-
-    override suspend fun getCityListSaveLocal(): List<String> =
-            weatherDao.getCityLocal()
 }

@@ -2,9 +2,10 @@ package ru.skillbox.presentation_patterns.ui.fragment.search
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
-import ru.skillbox.presentation_patterns.data.network.repository.WeatherRepository
 import ru.skillbox.presentation_patterns.data.room.model.WeatherEntity
 import ru.skillbox.presentation_patterns.data.storage.Pref
+import ru.skillbox.presentation_patterns.domain.WeatherDomain
+import ru.skillbox.presentation_patterns.domain.model.WeatherUI
 import ru.skillbox.presentation_patterns.ui.fragment.detail.DetailCityFragment
 import ru.skillbox.presentation_patterns.utils.*
 import ru.skillbox.presentation_patterns.utils.extension.NavigationEvent
@@ -14,7 +15,7 @@ import javax.inject.Inject
 @HiltViewModel
 class SearchViewModel @Inject constructor(
         private val pref: Pref,
-        private val weatherRepository: WeatherRepository
+        private val weatherDomain: WeatherDomain
 ) : BaseViewModel() {
 
     private val _weatherStatus =
@@ -28,11 +29,11 @@ class SearchViewModel @Inject constructor(
     fun getCity(city: String) {
         lastCity = city
         launchIO {
-            weatherRepository.getWeatherCity(city, ::onSuccess, ::onError)
+            weatherDomain.getWeatherCity(city, ::onSuccess, ::onError)
         }
     }
 
-    private fun onSuccess(result: List<WeatherEntity>) {
+    private fun onSuccess(result: List<WeatherUI>) {
         launch {
             if (result.isNotEmpty()) {
                 _weatherStatus.postValue(SUCCESS_WEATHER)
@@ -46,7 +47,7 @@ class SearchViewModel @Inject constructor(
         when(state) {
             is State.Error -> {
                 launchIO {
-                    val isSuccess = weatherRepository.getCityLocal(lastCity).isNotEmpty()
+                    val isSuccess = weatherDomain.getCityLocal(lastCity).isNotEmpty()
                     if(isSuccess) {
                         _weatherStatus.postValue(LOCAL_WEATHER)
                         delay(2000)
@@ -71,7 +72,7 @@ class SearchViewModel @Inject constructor(
         pref.setApp(city, isAdd = true)
     }
 
-    fun navigateDetail(city: String) {
+    private fun navigateDetail(city: String) {
         navigate(NavigationEvent.PushFragment(DetailCityFragment.newInstance(city)))
     }
 }

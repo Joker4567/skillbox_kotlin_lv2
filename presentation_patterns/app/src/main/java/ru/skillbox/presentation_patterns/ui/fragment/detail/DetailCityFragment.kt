@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import ru.skillbox.presentation_patterns.R
-import ru.skillbox.presentation_patterns.data.room.model.WeatherEntity
 import ru.skillbox.presentation_patterns.databinding.FragmentDetailBinding
+import ru.skillbox.presentation_patterns.domain.model.WeatherUI
 import ru.skillbox.presentation_patterns.ui.fragment.detail.adapter.itemDetailWeather
 import ru.skillbox.presentation_patterns.utils.extension.setData
 import ru.skillbox.presentation_patterns.utils.platform.ViewBindingFragment
@@ -48,7 +48,7 @@ class DetailCityFragment : ViewBindingFragment<FragmentDetailBinding>(
         }
     }
 
-    private fun setAdapter(listCity: List<WeatherEntity>) {
+    private fun setAdapter(listCity: List<WeatherUI>) {
         detailCityListAdapter.setData(listCity)
     }
 
